@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Hoàng Nguyễn | Full-Stack Developer Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- TopNavBar (Responsive & Action) -->
+    <header class="top-nav">
+        <div class="top-nav__brand">
+            <h1>Hoàng Nguyễn</h1>
+        </div>
+        <div class="top-nav__links">
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+        </div>
+        <a href="HoangNguyenCV.pdf" download class="btn btn--primary">Download CV</a>
+    </header>
+
+    <!-- SideNavBar (Persistent Desktop Sidebar) -->
+    <aside class="sidebar">
+        <div class="sidebar__profile">
+            <div class="sidebar__avatar">
+                <img alt="Hoàng Nguyễn professional portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYaWRtVz8AfYm-DiFcYOvtzVzbL0YV_40aTeCIu280FpNBIw376BgNJ5KJzilu0Gb8c3sA88r_pt8GFHJZ2qwLr80QmwtvUEnHzU2JWFWm0ywO7otzNRgCdGUgRSClrWT2S2C0MKwSMixeLtWRR5-z8-9lGYzzDz6BGYNI3kQTvDSvvBgYFz4m1bYOnf8L38krqhbHMJfvWarJkrdjCNX7I8Q2nIOCn7U7WX_LILvn2JTWzjEimykgRLElUq4exIf7p3xj6j0kuKE"/>
+            </div>
+            <h1 class="sidebar__name">Hoàng Nguyễn</h1>
+            <p class="sidebar__title">Full-Stack Developer · C# / .NET</p>
+        </div>
+        <nav class="sidebar__nav" id="sidebar-nav">
+            <a href="#summary" class="nav-link active">
+                <span class="material-symbols-outlined">person</span>
+                <span>Profile</span>
+            </a>
+            <a href="#experience" class="nav-link">
+                <span class="material-symbols-outlined">work</span>
+                <span>Experience</span>
+            </a>
+            <a href="#projects" class="nav-link">
+                <span class="material-symbols-outlined">code</span>
+                <span>Projects</span>
+            </a>
+            <a href="#skills" class="nav-link">
+                <span class="material-symbols-outlined">bolt</span>
+                <span>Skills</span>
+            </a>
+            <a href="#education" class="nav-link">
+                <span class="material-symbols-outlined">school</span>
+                <span>Education</span>
+            </a>
+        </nav>
+        <div class="sidebar__footer">
+            <a href="mailto:nguyenquanghoang1080@gmail.com" class="btn btn--primary btn--full">Contact Me</a>
+            <div class="sidebar__social">
+                <a href="https://github.com/NgueyenQuangHoang" target="_blank" rel="noopener noreferrer" title="GitHub"><span class="material-symbols-outlined">terminal</span></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="summary" class="section hero">
+            <div class="hero__content">
+                <h2 class="hero__title">Profile</h2>
+                <p class="hero__desc">
+                    I built a <strong>production-ready, AI-powered pharmacy platform</strong> from scratch — JWT security, Gemini AI consultation, full Docker deployment — before finishing my first year of university. My work on PharmaIntel-AI covers the full stack: 20+ RESTful APIs in ASP.NET Core, 15+ React/TypeScript screens, and a RAG-ready AI module, all shipped as a reproducible Docker environment. I'm looking for a C# backend or fullstack internship where I can contribute real deliverables on day one, not spend months reading documentation.
+                </p>
+                <p class="hero__desc" style="font-size: 15px; font-weight: 600; color: var(--clr-secondary); border-left: 3px solid var(--clr-secondary); padding-left: 12px; margin-bottom: 24px;">
+                    20+ APIs · 15+ UI Screens · 3 User Roles · 1 AI Module — shipped in 1 project
+                </p>
+                <div class="hero__contact">
+                    <div class="contact-item">
+                        <span class="material-symbols-outlined">phone</span>
+                        <span>0338 470 809</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="material-symbols-outlined">mail</span>
+                        <span>nguyenquanghoang1080@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="material-symbols-outlined">terminal</span>
+                        <span><a href="https://github.com/NgueyenQuangHoang" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">github.com/NgueyenQuangHoang</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__image" style="flex-direction: column; align-items: center; gap: 16px;">
+                <img alt="Portrait of Hoàng Nguyễn" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYaWRtVz8AfYm-DiFcYOvtzVzbL0YV_40aTeCIu280FpNBIw376BgNJ5KJzilu0Gb8c3sA88r_pt8GFHJZ2qwLr80QmwtvUEnHzU2JWFWm0ywO7otzNRgCdGUgRSClrWT2S2C0MKwSMixeLtWRR5-z8-9lGYzzDz6BGYNI3kQTvDSvvBgYFz4m1bYOnf8L38krqhbHMJfvWarJkrdjCNX7I8Q2nIOCn7U7WX_LILvn2JTWzjEimykgRLElUq4exIf7p3xj6j0kuKE"/>
+                <a href="HoangNguyenCV.pdf" download class="btn btn--outline" style="width: 100%; max-width: 300px;">
+                    <span class="material-symbols-outlined">download</span> Download CV
+                </a>
+            </div>
+        </section>
+
+        <!-- Technical Skills: 3-Column Bento Style -->
+        <section id="skills" class="section">
+            <h3 class="section__title">Technical Skills</h3>
+            <div class="bento-grid">
+                <!-- Backend -->
+                <div class="card bento-item">
+                    <div class="card__header">
+                        <span class="material-symbols-outlined icon-primary">dns</span>
+                        <h4>Backend</h4>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">C# / .NET</span>
+                        <span class="tag">ASP.NET Core</span>
+                        <span class="tag">EF Core</span>
+                        <span class="tag">REST API</span>
+                        <span class="tag">JWT / Auth</span>
+                        <span class="tag">SQL Server</span>
+                    </div>
+                </div>
+                <!-- Frontend -->
+                <div class="card bento-item">
+                    <div class="card__header">
+                        <span class="material-symbols-outlined icon-primary">code</span>
+                        <h4>Frontend</h4>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">React</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Redux Toolkit</span>
+                        <span class="tag">Axios</span>
+                    </div>
+                </div>
+                <!-- DevOps & Tools -->
+                <div class="card bento-item">
+                    <div class="card__header">
+                        <span class="material-symbols-outlined icon-primary">cloud</span>
+                        <h4>DevOps & Tools</h4>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Git / GitHub</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">Gemini API</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section id="experience" class="section">
+            <h3 class="section__title">Experience</h3>
+            <div class="timeline">
+                <!-- Entry 1 -->
+                <div class="timeline__entry">
+                    <div class="timeline__marker"></div>
+                    <div class="card timeline__content">
+                        <div class="timeline__header">
+                            <div>
+                                <h4 class="timeline__role">Full-Stack Developer</h4>
+                                <p class="timeline__company">UPSKILL IT Academy</p>
+                            </div>
+                            <div class="timeline__date">11/2025 — Present</div>
+                        </div>
+                        <div style="margin-top: 12px; margin-bottom: 16px;">
+                            <ul class="timeline__list">
+                                <li>
+                                    <span class="material-symbols-outlined">chevron_right</span>
+                                    <span>Designed and developed <strong>backend APIs</strong> with ASP.NET Core Web API and SQL Server, handling authentication, authorization, validation, and error handling end-to-end.</span>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">chevron_right</span>
+                                    <span>Built and integrated frontend screens using <strong>React, TypeScript, Redux Toolkit, and Axios</strong>; maintained codebase with Git/GitHub across feature iterations.</span>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">chevron_right</span>
+                                    <span>Contributed to containerized environments with <strong>Docker Compose</strong>, reducing onboarding setup time for new team members.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong style="display: block; margin-bottom: 8px; font-size: 14px;">Technologies:</strong>
+                            <div class="tags tags--small">
+                                <span class="tag">ASP.NET Core</span>
+                                <span class="tag">React</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Redux Toolkit</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">SQL Server</span>
+                                <span class="tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Project: Asymmetric Layout -->
+        <section id="projects" class="section">
+            <h3 class="section__title">Featured Project</h3>
+            <div class="project-grid">
+                <div class="card project-card">
+                    <div class="project-card__image">
+                        <div class="project-card__overlay">
+                            <a href="https://medicalpharmal.com/" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+                                Try it out <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                        <span class="material-symbols-outlined project-icon">medical_services</span>
+                    </div>
+                    <div class="project-card__content">
+                        <div class="project-card__header" style="margin-bottom: 8px;">
+                            <h4>PharmaIntel-AI</h4>
+                            <span style="font-family: var(--font-mono); color: var(--clr-text-light); font-size: 13px;">02/2026 — Present</span>
+                        </div>
+                        <p class="project-card__desc" style="margin-bottom: 12px; font-weight: 500; color: var(--clr-text-main);">
+                            AI-powered Pharmacy Management Platform · 6+ core modules
+                        </p>
+                        <div style="margin-bottom: 16px; display: flex; flex-direction: column; gap: 6px; font-size: 14px;">
+                            <a href="https://github.com/NgueyenQuangHoang/PharmaIntel-AI" target="_blank" rel="noopener noreferrer" style="color: var(--clr-secondary); display: inline-flex; align-items: center; gap: 6px; font-weight: 600;">
+                                <span class="material-symbols-outlined" style="font-size: 18px;">terminal</span> github.com/NgueyenQuangHoang/PharmaIntel-AI
+                            </a>
+                            <a href="https://medicalpharmal.com" target="_blank" rel="noopener noreferrer" style="color: var(--clr-secondary); display: inline-flex; align-items: center; gap: 6px; font-weight: 600;">
+                                <span class="material-symbols-outlined" style="font-size: 18px;">language</span> medicalpharmal.com · Live Demo
+                            </a>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat-box">
+                                <span class="stat-box__num">20+</span>
+                                <span class="stat-box__label">RESTful APIs</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-box__num">10+</span>
+                                <span class="stat-box__label">SQL Tables</span>
+                            </div>
+                        </div>
+                        <div class="tags tags--small">
+                            <span class="tag">ASP.NET Core Web API</span>
+                            <span class="tag">EF Core</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">JWT</span>
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Redux</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Gemini API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info" style="align-items: stretch;">
+                    <div class="project-info__inner" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
+                        <h5 style="margin-bottom: 16px; font-size: 20px; font-weight: 700;">Key Deliverables</h5>
+                        <ul class="project-info__features" style="gap: 16px;">
+                            <li style="align-items: flex-start;">
+                                <span class="material-symbols-outlined icon-secondary" style="margin-top: 2px;">chevron_right</span>
+                                <span style="font-weight: 500; font-size: 14px; color: var(--clr-text-muted); line-height: 1.5;">Engineered <strong>20+ RESTful APIs</strong> supporting 3 end-to-end workflows: prescription upload → pharmacist review → checkout → medication reminder.</span>
+                            </li>
+                            <li style="align-items: flex-start;">
+                                <span class="material-symbols-outlined icon-secondary" style="margin-top: 2px;">chevron_right</span>
+                                <span style="font-weight: 500; font-size: 14px; color: var(--clr-text-muted); line-height: 1.5;">Designed <strong>10+ SQL Server tables</strong> managing users, medicines, prescriptions, carts, orders, payments, and reminders with full relational integrity.</span>
+                            </li>
+                            <li style="align-items: flex-start;">
+                                <span class="material-symbols-outlined icon-secondary" style="margin-top: 2px;">chevron_right</span>
+                                <span style="font-weight: 500; font-size: 14px; color: var(--clr-text-muted); line-height: 1.5;">Implemented <strong>JWT + Role-Based Access Control</strong> across 3 roles (patient, pharmacist, admin), securing all sensitive clinical operations.</span>
+                            </li>
+                            <li style="align-items: flex-start;">
+                                <span class="material-symbols-outlined icon-secondary" style="margin-top: 2px;">chevron_right</span>
+                                <span style="font-weight: 500; font-size: 14px; color: var(--clr-text-muted); line-height: 1.5;">Built a <strong>context-aware AI consultation module</strong> that injects structured pharmacy/medication context into prompts before calling Google Gemini API — delivering accurate, domain-specific responses without manual pharmacist Q&A.</span>
+                            </li>
+                            <li style="align-items: flex-start;">
+                                <span class="material-symbols-outlined icon-secondary" style="margin-top: 2px;">chevron_right</span>
+                                <span style="font-weight: 500; font-size: 14px; color: var(--clr-text-muted); line-height: 1.5;">Built <strong>15+ React/TypeScript components</strong> and configured Docker Compose for the full stack, enabling one-command local environment setup.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certificates -->
+        <section id="education" class="section edu-grid">
+            <div>
+                <h3 class="section__title">Education</h3>
+                <div class="card edu-card">
+                    <div class="edu-card__header">
+                        <div class="icon-box">
+                            <span class="material-symbols-outlined icon-primary">school</span>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 18px;">Posts & Telecommunications Institute of Technology</h4>
+                            <p style="font-size: 14px; margin-top: 4px;">B.Sc. Information Technology</p>
+                        </div>
+                    </div>
+                    <p class="edu-card__date">08/2023 — Present</p>
+                </div>
+            </div>
+            <div>
+                <h3 class="section__title">Certificates</h3>
+                <div style="display: flex; flex-direction: column; gap: var(--space-md);">
+                    <div class="card edu-card">
+                        <div class="edu-card__header">
+                            <div class="icon-box">
+                                <span class="material-symbols-outlined icon-primary">card_membership</span>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 18px;">Advanced Frontend Development</h4>
+                                <p style="font-size: 14px; margin-top: 4px;">Rikkei Academy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card edu-card">
+                        <div class="edu-card__header">
+                            <div class="icon-box">
+                                <span class="material-symbols-outlined icon-primary">card_membership</span>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 18px;">Linux Administration (LPIC-1, LPIC-2)</h4>
+                                <p style="font-size: 14px; margin-top: 4px;">UpSkill Academy · Grade 8.0/10.0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <p>© 2026 Hoàng Nguyễn. Built with precision.</p>
+            <div class="footer__links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
